@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+    color: #333333;
+}
+
+input,
+textarea {
+    outline: none;
+    -webkit-appearance: none;
+    /*去除系统默认的样式*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* 点击高亮的颜色*/
+}
+
+html,
+body,
+div {
+    font-size: 10px;
+}
+
+body,
+h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+span,
+input,
+textarea {
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    margin: 0;
+}
+
+i,
+em {
+    font-style: normal
+}
+
+ul,
+li,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+// 弹窗
+.pop_content {
+    overflow: hidden;
+    max-height: 500px;
+    overflow-y: scroll;
+
+    .right_input {
+        flex: 1;
+    }
+}
+
+.pop_content::-webkit-scrollbar {
+    display: none; // 重点
+}
+
+.pop_item {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+
+    >p {
+        width: 80px;
+        font-size: 14px;
+        padding-right: 20px;
+        text-align: right;
+
+        >span {
+            color: #f56c6c;
+            padding: 3px 4px 0 0;
+            font-size: 14px;
+        }
+    }
+
+    .pop_input {
+        flex: 1;
+    }
+}
+
+.pop_item2 {
+    align-items: flex-start;
+}
+
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+
+.avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    display: block;
+
+    .table_container {
+        border-radius: 6px;
+        background: #ffffff;
+        padding: 20px 0;
+        margin: 20px;
+    }
+}
